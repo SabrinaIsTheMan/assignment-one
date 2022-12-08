@@ -1,0 +1,18 @@
+.links {
+    background: $secondary;
+    height: auto;
+}
+
+.links ul{
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li{
+        color: $color-black;
+        text-align: center;
+        h3{
+            color: $primary;
+        }
+    }
+}

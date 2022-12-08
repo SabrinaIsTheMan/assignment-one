@@ -1,0 +1,41 @@
+.blog{
+    background: $tertiary;
+    color: #fff;
+    padding: 0;
+}
+
+.blog .button a {
+    color: $primary;
+    background-color: #fff;
+}
+
+.blogFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blogTextContainer{
+    flex-basis: 50%;
+    padding: 5% 5%;
+}
+
+.blogFlex .button{
+    margin-top: 7.5%;
+}
+
+.blogImageContainer{
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 50vw;
+}
+
+.image1{
+    position: relative;
+    left: -50%;
+}
+
+.image2{
+    position: relative;
+    left: 50%;
+}

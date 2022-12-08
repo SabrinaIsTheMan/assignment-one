@@ -1,0 +1,94 @@
+html{
+    font-size: 125%;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Offside', cursive;
+}
+
+.wrapper{
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 50px 0;
+}
+
+.button{
+    margin-top: 5%;
+}
+
+.button a,
+button {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 10px 20px;
+}
+
+// TOPOGRAPHY
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+    font-weight: 400;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+p {
+    font-family: Barlow;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+// sticky icon bar
+.iconBar {
+    position: fixed;
+    top: 25%;
+    right: 2.5%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.iconBar a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 20px $color-black;
+
+    :hover,
+    :focus {
+        color: $color-black;
+        text-shadow: 2px 2px 20px #fff;
+        transition: 0.5s;
+    }
+}

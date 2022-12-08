@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Sanctuary</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Offside&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/bae09f409a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+<body>
+    <!-- header
+            logo + nav(flex) (flex)
+            h1 + social media icons(flex) (flex)
+            background image - header-image.png -->
+    <header class="home" id="home">
+        <div class="wrapper">
+            <div class="headerFlex">
+                <div class="logo">
+                    <p>Panda<br>Sanctuary</p>
+                </div>
+                <nav>
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- TOPBAR FLEX END -->
+            <h1>A safe and loving place for all pandas</h1>
+        </div> <!-- HOME WRAPPER END -->
+
+        <!-- sticky social media bar -->
+        <div class="iconBar">
+            <a href="#"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-square-snapchat fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <!-- about
+                    gallery(flex) (3 images)
+                    side image, text, button (flex) -->
+        <section class="about" id="about">
+            <div class="wrapper">
+                <h2>Our New Friends</h2>
+                <div class="galleryFlex">
+                    <ul>
+                        <li><img src="./assets/gallery-image-1@2x.png" alt="panda eating bambo"></li>
+                        <li><img src="./assets/gallery-image-2@2x.png" alt="side profile of panda"></li>
+                        <li class="MQBigImage"><img src="./assets/gallery-image-3@2x.png" alt="two pandas"></li>
+                    </ul>
+                </div> <!-- ABOUT GALLERY FLEX END -->
+                <div class="aboutFlex">
+                    <div class="aboutImageContainer">
+                        <img src="./assets/small-box@2x.png" alt="panda in a tree">
+                    </div>
+                    <div class="aboutTextContainer">
+                        <h2>More about our park</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae deserunt dolor ex ipsum sapiente, doloribus amet reiciendis, sit quasi minus illo dignissimos? Corrupti natus, dicta possimus accusantium quisquam esse harum ipsum totam, necessitatibus sequi nihil.</p>
+                        <div class="button"><a href="#">Read more</a></div>
+                    </div> <!-- ABOUT TEXT CONTAINER END -->
+                </div> <!-- ABOUT FLEX END -->
+            </div> <!-- ABOUT WRAPPER END -->
+        </section>
+
+        <!--  blog
+                    text, button, side image (flex)
+                    side image, text, button (flex) -->
+        <section class="blog" id="blog">
+            <div class="wrapper">
+                <div class="blogFlex">
+                    <div class="blogTextContainer">
+                        <h2>Bobby and Bella</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita, ullam asperiores suscipit nulla nobis quisquam sit quia aut! Quaerat maiores dolore autem consequuntur culpa!</p>
+                        <div class="button"><a href="#">Read more</a></div>
+                    </div> <!-- BLOG TEXT CONTAINER END -->
+                    <div class="blogImageContainer image1">
+                        <img src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.png" alt="two baby pandas">
+                    </div>
+                </div> <!-- BLOG FLEX END -->
+
+                <div class="blogFlex">
+                    <div class="blogImageContainer image2">
+                        <img src="./assets/debbie-molle-6-dsid-8-ey-9-u-unsplash-1@2x.png" alt="Marco the panda eating bamboo">
+                    </div>
+                    <div class="blogTextContainer">
+                        <h2>Look at Marco now</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita, ullam asperiores suscipit nulla nobis quisquam sit quia aut! Quaerat maiores dolore autem consequuntur culpa!</p>
+                        <div class="button"><a href="#">Read more</a></div>
+                    </div> <!-- BLOG TEXT CONTAINER END -->
+                </div> <!-- BLOG FLEX END -->
+            </div> <!-- BLOG WRAPPER END -->
+        </section>
+
+        <!-- links
+                    ul - 3 icons with labels (flex) -->
+        <section class="links" id="links">
+            <div class="wrapper">
+                <ul>
+                    <li><i class="fa-solid fa-gift fa-2xl"></i><h3>Donations</h3></li>
+                    <li><i class="fa-solid fa-briefcase fa-2xl"></i><h3>Jobs</h3></li>
+                    <li><i class="fa-solid fa-calendar-check fa-2xl"></i><h3>Events</h3></li>
+                </ul>
+            </div>
+        </section>
+    
+    <!-- contact
+                text, email form; contact info; nav(flex) (flex)
+                copyright -->
+
+    <section class="bottom" id="bottom">
+        <div class="wrapper">
+            <div class="bottomFlex">
+                <div class="form">
+                    <h4>Stay updated</h4>
+                    <p>Subscribe to our newsletter to stay updated.</p>
+                    <form action="#">
+                        <label for="email" class="sr-only">Email Address</label>
+                        <input type="email" id="email" placeholder="email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div> <!-- FORM END -->
+
+                    <div class="contact" id="contact">
+                        <h4>Contact</h4>
+                        <p>info@email.com 123 - 456 - 7890</p>
+                        <p>123 Some Road, Toronto, ON</p>
+                        <p>A5A 5A5, Canada</p>
+                    </div> <!-- CONTACT END -->
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+            </div> <!-- FOOTER FLEX END -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <p>Copyright © 2019 Juno College</p>
+        </div> <!-- FOOTER WRAPPER END -->
+    </footer>
+</body>
+</html>

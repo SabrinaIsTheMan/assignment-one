@@ -1,0 +1,43 @@
+.about{
+    background: $secondary;
+    h2{
+        color: $primary;
+        text-align: center;
+        margin: 1% 0;
+    }
+}
+
+.galleryFlex ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        flex-basis: calc((100% / 3) - 30px);
+        margin-bottom: 75px;
+    }
+}
+
+.aboutFlex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.aboutTextContainer{
+    margin-left: 5%;
+    h2{
+    text-align: left;
+    margin-top: 0;
+    }
+}
+
+.aboutImageContainer{
+   flex-basis: 60vw;
+}
+
+.about .button a {
+    color: #fff;
+    background-color: $primary;
+}
