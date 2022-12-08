@@ -355,7 +355,8 @@ header nav ul a:focus {
   transition: 0.5s;
 }
 
-.fa-bars {
+.hamNav label,
+#hamburger {
   display: none;
 }
 
@@ -635,12 +636,41 @@ footer p {
 button {
     padding: 25px 30px;
   }
-  .headerFlex ul {
-    display: none;
-    position: absolute;
+}
+@media (max-width: 768px) {
+  .headerFlex {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 10vh;
   }
-  .fa-bars {
+  .hamItems a {
     display: block;
+    width: 100%;
+    color: #fff;
+    padding: 5px;
+    background: #213C28;
+  }
+  .hamNav label {
+    display: inline-block;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+  .hamItems {
+    display: none;
+  }
+  .hamNav input:checked ~ .hamItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 768px) {

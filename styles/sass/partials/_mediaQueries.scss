@@ -8,24 +8,39 @@
     button {
     padding: 25px 30px;
     }
-
-    .headerFlex ul{
-        display: none;
-        position: absolute;
-    }
-
-    .fa-bars{
-        display: block;
-    }
-
-    .fa-bars:hover{
-
-    }
 }
 
 // HEADER MQ
 @media (max-width: 768px) {
+    .headerFlex{
+        align-items: flex-start;
+        height: 10vh;
+    }
     
+    .hamItems a{
+        display: block;
+        width: 100%;
+        color: #fff;
+        padding: 5px;
+        background: $tertiary;
+    }
+
+    .hamNav label{
+        display: inline-block;
+        color: #fff;
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+
+    .hamItems{
+        display: none;
+    }
+
+    .hamNav input:checked ~ .hamItems{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 // ABOUT MQ
